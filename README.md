@@ -19,13 +19,11 @@ A Hotel Management ER diagram is a visual representation of the data model used 
 These entities represent key aspects of hotel management and are used to store and manage data related to guests, reservations, rooms, employees, payments, and other important aspects of hotel operations. Together, they provide a comprehensive view of a hotel's operations and help to streamline processes, improve efficiency, and enhance the guest experience.
 
 #### ATTRIBUTES FOR EACH ENTITY
-1. Guest: guest_id, first_name, last_name, email, phone_number, address, nationality, date_of_birth, Age , passport_number
-2. Reservation: reservation_id, guest_id, room_id, check_in_date, check_out_date, reservation_date, payment_status
-3. Room: room_id, room_number, room_type_id, room_status_id, floor_number, description
-4. Room Type: room_type_id, name, description, occupancy_limit, base_price
-5. Room Status: room_status_id, name, description
-6. Payment: payment_id, reservation_id, payment_method, amount, payment_date
-7. Employee: employee_id, first_name, last_name, email, phone_number, department_id, job_title_id, shift_id, salary, hire_date
+1. Guest: guest_id, first_name, last_name, email, phone_number, address, date_of_birth, Age 
+2. Reservation: reservation_id, check_in_date, check_out_date, reservation_date, payment_structure
+3. Room:  room_number, floor_number, room_type, occupancy_limit, base_price
+4. Payment: payment_id, payment_method, amount, payment_date
+5. Employee: employee_id, first_name, last_name, email, phone_number, department_id, job_title_id, shift_id, salary, hire_date
 8. Job Title: job_title_id, title, description
 9. Department: department_id, name, description
 10. Shift: shift_id, start_time, end_time, description
@@ -33,19 +31,19 @@ These entities represent key aspects of hotel management and are used to store a
 12. Event: event_id, name, description, date, time, location, organizer, attendees
 
 #Guest
-|G_ID| NAME          | ADDRESS                                |PHONE_NO               |E_MAIL                  | DOB            |NATIONALITY    |Age       |
-|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|--------------------:|--------------:|---------:|
-|008 | Rispa Maria   | 08/B block, Noida,Uttar Pradesh        | 7638926678            |rispam08@gmail.com      |19-03-2000      | Indian        | 23
-|111 | Hari Krishnan | 11/H block, Coimbatore,                | 8897654253            |harikri0@gmail.com      |20-05-1999      | Indian        | 24
-|107 | Mamta Rawat   | 20/C block, Lucknow, Uttar Pradesh     | 9450393599            |mamatra90@gmail.com     |03-01-2002      | Indian        | 21
+|G_ID| NAME          | ADDRESS                                |PHONE_NO               |E_MAIL                  | DOB            |Age       |
+|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|--------------------:|---------:|
+|008 | Rispa Maria   | 08/B block, Noida,Uttar Pradesh        | 7638926678            |rispam08@gmail.com      |19-03-2000      | 23
+|111 | Hari Krishnan | 11/H block, Coimbatore,                | 8897654253            |harikri0@gmail.com      |20-05-1999      | 24
+|107 | Mamta Rawat   | 20/C block, Lucknow, Uttar Pradesh     | 9450393599            |mamatra90@gmail.com     |03-01-2002      | 21
 
 
 #Reservation
 |R_ID| Reservation_date     | Payment_Structure                      |Check_in_date          |Check_out_date     | 
 |---:| -------------------- |:--------------------------------------:| ---------------------:|------------------:|
-|101 | 19-04-2023           | 08/B block, Noida,Uttar Pradesh        | 20-04-2023            | 22-04-2023     
-|102 | 21-04-2023           | 11/H block, Coimbatore,                | 22-04-2023            | 23-04-2023    
-|103 | 24-04-2023           | 20/C block, Lucknow, Uttar Pradesh     | 25-04-2023            | 27-04-2023     
+|101 | 19-04-2023           | ONLINE                                 | 20-04-2023            | 22-04-2023     
+|102 | 21-04-2023           | CASH                                   | 22-04-2023            | 23-04-2023    
+|103 | 24-04-2023           | ONLINE                                 | 25-04-2023            | 27-04-2023     
 
 
 #Room
