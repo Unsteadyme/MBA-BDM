@@ -1,3 +1,6 @@
+#### Athul S 22121011
+#### Kajal Singh 22121032
+
 ### HOTEL MANAGMENT SYSTEM
 #### INTRODUCTION
 A Hotel Management ER diagram is a visual representation of the data model used to manage hotel operations. It includes entities such as guests, reservations, rooms, employees, payments, and other key aspects of hotel management. The diagram helps hotel managers and developers understand the relationships between different entities in the system and can be used as a blueprint for developing a custom hotel management system. Overall, a Hotel Management ER diagram is a valuable tool for improving the efficiency and organization of hotel operations.
