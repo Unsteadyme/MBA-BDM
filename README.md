@@ -19,16 +19,17 @@ A Hotel Management ER diagram is a visual representation of the data model used 
 These entities represent key aspects of hotel management and are used to store and manage data related to guests, reservations, rooms, employees, payments, and other important aspects of hotel operations. Together, they provide a comprehensive view of a hotel's operations and help to streamline processes, improve efficiency, and enhance the guest experience.
 
 #### ATTRIBUTES FOR EACH ENTITY
-1. Guest: guest_id, first_name, last_name, email, phone_number, address, date_of_birth, Age 
-2. Reservation: reservation_id, check_in_date, check_out_date, reservation_date, payment_structure
-3. Room:  room_number, floor_number, room_type, occupancy_limit, base_price
-4. Payment: payment_id, payment_method, amount, payment_date
-5. Employee: employee_id, first_name, last_name, email, phone_number, department_id, job_title_id, shift_id, salary, hire_date
-8. Job Title: job_title_id, title, description
-9. Department: department_id, name, description
-10. Shift: shift_id, start_time, end_time, description
-11. Amenities: amenity_id, name, description
-12. Event: event_id, name, description, date, time, location, organizer, attendees
+1. Hotel: hotel_id, hotel name, hotel address, hotel phone no
+2. Guest: guest_id, first_name, last_name, email, phone_number, address, date_of_birth, Age 
+3. Reservation: reservation_id, check_in_date, check_out_date, reservation_date, payment_structure
+4. Room:  room_number, floor_number, room_type, occupancy_limit, base_price
+5. Payment: payment_id, payment_method, amount, payment_date
+6. Employee: employee_id, first_name, last_name, email, phone_number, department_id, job_title_id, shift_id, salary, hire_date
+7. Job Title: job_title_id, title, description
+8. Department: department_id, name, description
+9. Shift: shift_id, start_time, end_time, description
+10. Amenities: amenity_id, name, description
+11. Event: event_id, name, description, date, time, location, organizer, attendees
 
 #Guest
 |G_ID| NAME          | ADDRESS                                |PHONE_NO               |E_MAIL                  | DOB            |Age       |
