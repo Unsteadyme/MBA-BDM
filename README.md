@@ -120,6 +120,7 @@ These entities represent key aspects of hotel management and are used to store a
 
 
 ### ERP DIAGRAM
-![ERD HOTEL MANAGMENT drawio (2)](https://user-images.githubusercontent.com/125996860/234361552-90dd4a06-20a2-43b1-9918-b73781ad0f07.png)
+![ERD HOTEL MANAGMENT drawio (3)](https://user-images.githubusercontent.com/125996860/234365150-f12ca925-397e-42cc-a735-f6911e1f6e42.png)
+
 
 
