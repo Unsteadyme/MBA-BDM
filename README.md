@@ -3,18 +3,17 @@
 A Hotel Management ER diagram is a visual representation of the data model used to manage hotel operations. It includes entities such as guests, reservations, rooms, employees, payments, and other key aspects of hotel management. The diagram helps hotel managers and developers understand the relationships between different entities in the system and can be used as a blueprint for developing a custom hotel management system. Overall, a Hotel Management ER diagram is a valuable tool for improving the efficiency and organization of hotel operations.
 
 #### DOMINE ENTITY
-1. Guest
-2. Reservation
-3. Room
-4. Room Type
-5. Room Status
-6. Payment
-7. Employee
-8. Job Title
-9. Department
-10. Shift
-11. Amenities
-12. Event
+1. Hotel
+2. Guest
+3. Reservation
+4. Room
+5. Payment
+6. Employee
+7. Job Title
+8. Department
+9. Shift
+10. Amenities
+11. Event
 
 These entities represent key aspects of hotel management and are used to store and manage data related to guests, reservations, rooms, employees, payments, and other important aspects of hotel operations. Together, they provide a comprehensive view of a hotel's operations and help to streamline processes, improve efficiency, and enhance the guest experience.
 
