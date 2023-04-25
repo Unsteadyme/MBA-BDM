@@ -105,8 +105,8 @@ These entities represent key aspects of hotel management and are used to store a
 Guest_id                |Indoor_game_facilities | Wifi_facilities| Playground       | Internet |Gym        | Swimming_pool   |
 |---------------------- |:-------------------:| ----------------:|------------------|----------|----------:|----------------:|
 |   008                 | Available           |  Unavailable     | Available        |Available |  Available|  Available
-|111                    | Available           |   Unavailable    | Available        |Available |    
-|107                    | Available           |   Unavailable    |                  |          |   
+|111                    | Available           |   Unavailable    | Available        |Available |  Available|  Available
+|107                    | Available           |   Unavailable    | Available        |Available |  Available|  Available
 
 
 #Event
