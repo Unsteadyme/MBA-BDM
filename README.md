@@ -59,9 +59,9 @@ These entities represent key aspects of hotel management and are used to store a
 #Payment
 |P_ID| Payment_method    | Amount                                 |Payment_date           |
 |---:| ----------------- |:--------------------------------------:| ---------------------:|
-|301 | 2                 | 1000                                   | 19-04-2023                      
-|104 | 3                 | 5000                                   | 21-04-2023                     
-|401 | 5                 | 1000                                   | 24-04-2023                        
+|301 | Cash              | 1000                                   | 19-04-2023                      
+|104 | Online            | 5000                                   | 21-04-2023                     
+|401 | Online            | 1000                                   | 24-04-2023                        
 
 
 
@@ -75,7 +75,7 @@ These entities represent key aspects of hotel management and are used to store a
 
 #Department
 |D_ID| Department_name        | Description                            |
-|---:| ---------------------- |:--------------------------------------:| ---------------------:|
+|---:| ---------------------- |:--------------------------------------:| 
 |666 | HR Department          | 1000                                                        
 |212 | Food Departnment       | 5000                                                     
 |543 | Housekeeping           | 1000                                   
@@ -83,23 +83,23 @@ These entities represent key aspects of hotel management and are used to store a
 
 #Shift
 |S_ID| Start_time        | End_time                               |Description          |
-|---:| ----------------- |:--------------------------------------:| ---------------------:|
+|---:| ----------------- |:--------------------------------------:| -------------------:|
 |222 | 9am               | 5pm                                    | 19-04-2023                      
 |111 | 6am               | 12am                                   | 21-04-2023                     
 |333 | 9am               | 5pm                                    | 24-04-2023                        
 
 
 #Amenities 
-|Indoor_game_facilities | Floor_No.     | BASE_PRICE                             |OCCUPANCY_LIMIT        |ROOM_TYPE          | 
-|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|
-|301 | 2             | 1000                                   | 2                     |Classic     
-|104 | 3             | 5000                                   | 4                     |  Deluxe   
-|401 | 5             | 1000                                   | 2                     |Classic     
+|Indoor_game_facilities | Wifi_facilities     | Playground       | Internet         |Gym       | Swimming_pool   |
+|---------------------- |:-------------------:| ----------------:|-----------------:|----------|
+|Ludo                   | Available           |                  | 2                |Classic     
+|Chess                  | Available           |                  | 4                |  Deluxe   
+|Ball pool              | Available           |                  | 2                |Classic     
 
 
 #Event
-|r_no| Floor_No.     | BASE_PRICE                             |OCCUPANCY_LIMIT        |ROOM_TYPE          | 
-|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|
-|301 | 2             | 1000                                   | 2                     |Classic     
-|104 | 3             | 5000                                   | 4                     |  Deluxe   
-|401 | 5             | 1000                                   | 2                     |Classic     
+|e_id| Event_name    |Organizers                              | Location              |Attendees          |Date         | Time   |
+|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|------------:|
+|381 | marriage      | xyz                                    | gate 2                |Classic            | 20=03-2023  | 8
+|114 | birthday      | abc                                    | Gate1                 |  Deluxe           | 22-03-2023  | 6
+|411 | birthday      | qwe                                    | Gate1                 |Classic            |  23-03-2023 | 9
