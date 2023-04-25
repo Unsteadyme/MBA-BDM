@@ -31,6 +31,12 @@ These entities represent key aspects of hotel management and are used to store a
 10. Amenities: amenity_id, name, description
 11. Event: event_id, name, description, date, time, location, organizer, attendees
 
+#Hotel
+|H_ID| NAME          | ADDRESS                                          |PHONE_NO               |
+|---:| ------------- |:------------------------------------------------:| ---------------------:|
+|007 | TAJ           | 08/B block, LUCKNOW 226008 ,Uttar Pradesh        | 7638927678            
+|    |               |                                                 
+|    |               |                                                
 #Guest
 |G_ID| NAME          | ADDRESS                                |PHONE_NO               |E_MAIL                  | DOB            |Age       |
 |---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|--------------------:|---------:|
@@ -67,9 +73,9 @@ These entities represent key aspects of hotel management and are used to store a
 #Employee
 |e_ID| NAME          | Department                             |PHONE_NO               |Shift              | Job_title_id
 |---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|-------------:|
-|009 | Siddharth B   | HR Department                          | 7638926888            |Day   
-|001 |Santhosh N     | Food Department                        | 9937654253            |Day and Night  
-|006 | Sanskar G     | Housekeeping                           | 6450393566            |Night    
+|009 | Siddharth B   | HR Department                          | 7638926888            |Day                |009
+|001 |Santhosh N     | Food Department                        | 9937654253            |Day and Night      |001
+|006 | Sanskar G     | Housekeeping                           | 6450393566            |Night              |006
 
 
 #Job title
@@ -96,9 +102,9 @@ These entities represent key aspects of hotel management and are used to store a
 
 
 #Amenities 
-Guest_id                |Indoor_game_facilities | Wifi_facilities| Playground       | Internet |Gym       | Swimming_pool   |
-|---------------------- |:-------------------:| ----------------:|------------------|----------|---------:|----------------:|
-|   008                 | Available           |  Unavailable     | Available        |Available | 
+Guest_id                |Indoor_game_facilities | Wifi_facilities| Playground       | Internet |Gym        | Swimming_pool   |
+|---------------------- |:-------------------:| ----------------:|------------------|----------|----------:|----------------:|
+|   008                 | Available           |  Unavailable     | Available        |Available |  Available|  Available
 |111                    | Available           |   Unavailable    | Available        |Available |    
 |107                    | Available           |   Unavailable    |                  |          |   
 
