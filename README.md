@@ -103,3 +103,10 @@ These entities represent key aspects of hotel management and are used to store a
 |381 | marriage      | xyz                                    | gate 2                |Classic            | 20=03-2023  | 8
 |114 | birthday      | abc                                    | Gate1                 |  Deluxe           | 22-03-2023  | 6
 |411 | birthday      | qwe                                    | Gate1                 |Classic            |  23-03-2023 | 9
+
+
+
+
+
+![ERD HOTEL MANAGMENT drawio](https://user-images.githubusercontent.com/125997577/234342409-9450b7c4-b5bb-43bc-b5f3-ef28df8cb43d.png)
+
