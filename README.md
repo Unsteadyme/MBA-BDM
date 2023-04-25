@@ -65,12 +65,19 @@ These entities represent key aspects of hotel management and are used to store a
 
 
 #Employee
-|e_ID| NAME          | Department                             |PHONE_NO               |Shift              |
-|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|
+|e_ID| NAME          | Department                             |PHONE_NO               |Shift              | Job_title_id
+|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|-------------:|
 |009 | Siddharth B   | HR Department                          | 7638926888            |Day   
 |001 |Santhosh N     | Food Department                        | 9937654253            |Day and Night  
 |006 | Sanskar G     | Housekeeping                           | 6450393566            |Night    
 
+
+#Job title
+|jt_ID| Job_title_NAME          | Salary                                 |Job description        |Job requirement              | 
+|----:| ----------------------- |:--------------------------------------:| ---------------------:|----------------------------:|
+|009  | Siddharth B             | 25000                                  | 7638926888            |Day   
+|001  |Santhosh N               | 65000                                  | 9937654253            |Day and Night  
+|006  | Sanskar G               | 15000                                  | 6450393566            |Night    
 
 #Department
 |D_ID| Department_name        | Description                            |
@@ -91,9 +98,9 @@ These entities represent key aspects of hotel management and are used to store a
 #Amenities 
 |Indoor_game_facilities | Wifi_facilities     | Playground       | Internet         |Gym       | Swimming_pool   |
 |---------------------- |:-------------------:| ----------------:|------------------|----------|----------------:|
-|Ludo                   | Available           |                  | 2                |Classic   | Available  
-|Chess                  | Available           |                  | 4                |  Deluxe  | Available   
-|Ball pool              | Available           |                  | 2                |Classic   | Available    
+|Available              | Available           |  Unavailable     | Available        |Available | 
+|Available              | Available           |   Unavailable    | Available      |Available    |    
+|Available              | Available           |   Unavailable               |                |          |   
 
 
 #Event
