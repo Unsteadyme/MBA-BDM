@@ -91,15 +91,15 @@ These entities represent key aspects of hotel management and are used to store a
 
 #Amenities 
 |Indoor_game_facilities | Wifi_facilities     | Playground       | Internet         |Gym       | Swimming_pool   |
-|---------------------- |:-------------------:| ----------------:|-----------------:|----------|
-|Ludo                   | Available           |                  | 2                |Classic     
-|Chess                  | Available           |                  | 4                |  Deluxe   
-|Ball pool              | Available           |                  | 2                |Classic     
+|---------------------- |:-------------------:| ----------------:|------------------|----------|----------------:|
+|Ludo                   | Available           |                  | 2                |Classic   | Available  
+|Chess                  | Available           |                  | 4                |  Deluxe  | Available   
+|Ball pool              | Available           |                  | 2                |Classic   | Available    
 
 
 #Event
 |e_id| Event_name    |Organizers                              | Location              |Attendees          |Date         | Time   |
-|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|------------:|
+|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|------------:|--------:|
 |381 | marriage      | xyz                                    | gate 2                |Classic            | 20=03-2023  | 8
 |114 | birthday      | abc                                    | Gate1                 |  Deluxe           | 22-03-2023  | 6
 |411 | birthday      | qwe                                    | Gate1                 |Classic            |  23-03-2023 | 9
