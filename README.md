@@ -41,7 +41,7 @@ These entities represent key aspects of hotel management and are used to store a
 |    |               |                                                
 #Guest
 |G_ID| NAME          | ADDRESS                                |PHONE_NO               |E_MAIL                  | DOB            |Age       |
-|---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|--------------------:|---------:|
+|---:| ------------- |:--------------------------------------:| ---------------------:|-----------------------:|---------------:|----------|
 |008 | Rispa Maria   | 08/B block, Noida,Uttar Pradesh        | 7638926678            |rispam08@gmail.com      |19-03-2000      | 23
 |111 | Hari Krishnan | 11/H block, Coimbatore,                | 8897654253            |harikri0@gmail.com      |20-05-1999      | 24
 |107 | Mamta Rawat   | 20/C block, Lucknow, Uttar Pradesh     | 9450393599            |mamatra90@gmail.com     |03-01-2002      | 21
@@ -103,12 +103,12 @@ These entities represent key aspects of hotel management and are used to store a
 |333 | 9am               | 5pm                                    | 24-04-2023                        
 
 
-#Amenities 
-Guest_id                |Indoor_game_facilities | Wifi_facilities| Playground       | Internet |Gym        | Swimming_pool   |
-|---------------------- |:-------------------:| ----------------:|------------------|----------|----------:|----------------:|
-|   008                 | Available           |  Unavailable     | Available        |Available |  Available|  Available
-|111                    | Available           |   Unavailable    | Available        |Available |  Available|  Available
-|107                    | Available           |   Unavailable    | Available        |Available |  Available|  Available
+#Room type 
+Guest_id                |Room size            | View             | Amenities        | Decor       | 
+|---------------------- |:-------------------:| ----------------:|------------------|------------:|
+|008                 | Available           |  Garden          | Wifi             |Classic      |  
+|111                    | Available           |  Ocean           | Coffee maker     | Modern      | 
+|107                    | Available           |  Mountain        | Minibar          |Contemporary |  
 
 
 #Event
