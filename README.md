@@ -37,11 +37,11 @@ These entities represent key aspects of hotel management and are used to store a
 |H_ID| NAME          | ADDRESS                                          |PHONE_NO               |
 |---:| ------------- |:------------------------------------------------:| ---------------------:|
 |007 | TAJ           | 08/B block, LUCKNOW 226008 ,Uttar Pradesh        | 7638927678            
-|    |               |                                                 
-|    |               |                                                
+                                               
+                                              
 #Guest
 |G_ID| NAME          | ADDRESS                                |PHONE_NO               |E_MAIL                  | DOB            |Age       |
-|---:| ------------- |:--------------------------------------:| ---------------------:|-----------------------:|---------------:|----------|
+|---:| ------------- |:--------------------------------------:| ---------------------:|-----------------------:|---------------:|---------:|
 |008 | Rispa Maria   | 08/B block, Noida,Uttar Pradesh        | 7638926678            |rispam08@gmail.com      |19-03-2000      | 23
 |111 | Hari Krishnan | 11/H block, Coimbatore,                | 8897654253            |harikri0@gmail.com      |20-05-1999      | 24
 |107 | Mamta Rawat   | 20/C block, Lucknow, Uttar Pradesh     | 9450393599            |mamatra90@gmail.com     |03-01-2002      | 21
