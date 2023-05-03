@@ -1,7 +1,7 @@
-PROBLEM STATEMENT 1
+###PROBLEM STATEMENT 1
 
 
-
+####querie
 SELECT CASE
     WHEN G_age < 25 THEN 'Under 25'
     ELSE '25 and Over'
