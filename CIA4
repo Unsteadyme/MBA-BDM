@@ -1,0 +1,294 @@
+create table Guest_details (
+guest_id int not null ,
+G_name varchar(50) ,
+G_gmail varchar(50) ,
+G_dob date ,
+G_age int ,
+primary key (guest_id) );
+
+
+create table Room ( Room_no INT NOT NULL , Floor_no int ,
+Base_price varchar(50) , guest_id int ,
+primary key (room_no) , foreign key (guest_id) references Guest_details (guest_id) );
+
+
+create table Room_type ( Room_type_ID int not null ,
+ room_no int , room_size varchar(50) , aminity varchar(50) , room_view varchar(50) , decor varchar(50),
+ primary key (room_type_ID) , foreign key (room_no ) references Room (room_no)) ;
+ 
+ 
+ create table Reservation (Reservation_id int not null , Room_no int , check_in_ datetime,
+check_out datetime , reservation_date date , guest_id int , payment_id int ,
+ primary key (reservation_id ) ,
+ foreign key( Room_no) references Room (Room_no),
+ foreign key(guest_id) references Guest_details(guest_id),
+ FOREIGN KEY (Payment_id) references payment (payment_id)); 
+ 
+ 
+ create table payment (payment_id int not null , payment_method varchar(50),
+amount int , payment_date date , guest_id  int,
+ primary key ( payment_id ), foreign key (guest_id) references Guest_details (guest_id));
+ 
+ 
+ create table shift ( shift_id int not null , 
+start_time datetime , end_time datetime , s_description varchar(50) , primary key( shift_id)) ;
+ 
+ 
+ create TABLE  Department ( department_id int not null, D_name varchar(50) , 
+d_description varchar (50), primary key (department_id) );
+
+
+create table  job_title ( job_id int not null , salary_rs int , 
+job_role varchar(50) , job_requirement varchar(50) , job_description varchar (50) , primary key (job_id ));
+
+
+create table H_event ( event_id int not null , E_name varchar(50) , E_location varchar(50) , 
+E_date_time datetime , event_location varchar(50) , E_attendies int, primary key (event_id) );
+
+
+create table H_Employee ( Emp_id int not null , Emp_name varchar(50) , Emp_mail varchar(50) , 
+department_id int , shift_id int , job_id int , primary key (emp_id) , foreign key (department_id) references department  (department_id), foreign key (job_id) references job_title (job_id),
+foreign key (shift_id) references shift (shift_id)) ;
+
+
+CREATE TABLE Address (
+   id INT NOT NULL AUTO_INCREMENT,
+   guest_id INT,
+   emp_id INT,
+   street VARCHAR(50),
+   city VARCHAR(50),
+   state VARCHAR(50),
+   zip_code VARCHAR(10),
+   PRIMARY KEY (id),
+   FOREIGN KEY (guest_id) REFERENCES Guest_details(guest_id),
+   FOREIGN KEY (emp_id) REFERENCES H_employee(emp_id)
+);
+
+
+CREATE TABLE Phone_number (
+   id INT NOT NULL AUTO_INCREMENT,
+   guest_id INT,
+   emp_id INT,
+   phone_number_1 VARCHAR(20),
+   phone_number_2 varchar (20),
+   PRIMARY KEY (id),
+   FOREIGN KEY (guest_id) REFERENCES Guest_details (guest_id),
+   FOREIGN KEY (emp_id) REFERENCES H_employee(emp_id)
+);
+
+
+select * from guest_details ;
+select * from phone_number ;
+select * from address ;
+select * from department;
+select * from guest_details;
+select * from h_employee ;
+select * from h_event;
+select * from job_title ;
+select * from payment ;
+select * from reservation ;
+select * from room;
+select * from room_type;
+select * from shift ;
+
+
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (1, 'Aarav Patel', 'aarav.patel@gmail.com', '1995-06-15', 27);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (2, 'Priya Sharma', 'priya.sharma@gmail.com', '1998-09-21', 24);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (3, 'Rahul Gupta', 'rahul.gupta@gmail.com', '1992-03-08', 30);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (4, 'Isha Singh', 'isha.singh@gmail.com', '1997-12-02', 25);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (5, 'Aryan Sharma', 'aryan.sharma@gmail.com', '1993-05-18', 29);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (6, 'Kavya Mehta', 'kavya.mehta@gmail.com', '1999-02-11', 23);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (7, 'Aditya Singh', 'aditya.singh@gmail.com', '1990-11-24', 32);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (8, 'Tanvi Patel', 'tanvi.patel@gmail.com', '1996-08-06', 26);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (9, 'Vivek Kumar', 'vivek.kumar@gmail.com', '1991-04-17', 31);
+INSERT INTO Guest_details (guest_id, G_name, G_gmail, G_dob, G_age) 
+VALUES (10, 'Ananya Gupta', 'ananya.gupta@gmail.com', '1994-07-29', 28);
+
+
+INSERT INTO Room (Room_no, Floor_no, Base_price, guest_id) 
+VALUES (101, 1, '5000', 1);
+INSERT INTO Room (Room_no, Floor_no, Base_price, guest_id) 
+VALUES (102, 1, '5000', 2);
+INSERT INTO Room (Room_no, Floor_no, Base_price, guest_id) 
+VALUES (201, 2, '10000', 3);
+INSERT INTO Room (Room_no, Floor_no, Base_price, guest_id) 
+VALUES (301, 3, '12000', 4);
+INSERT INTO Room (Room_no, Floor_no, Base_price, guest_id) 
+VALUES (401, 4, '25000', 5);
+
+
+INSERT INTO Room_type (Room_type_ID, room_no, room_size, aminity, room_view, decor) 
+VALUES (1, 101, 'Single', 'WiFi, TV, Mini Bar', 'City View', 'Modern');
+INSERT INTO Room_type (Room_type_ID, room_no, room_size, aminity, room_view, decor) 
+VALUES (2, 102, 'Single', 'WiFi, TV, Mini Bar', 'City View', 'Modern');
+INSERT INTO Room_type (Room_type_ID, room_no, room_size, aminity, room_view, decor) 
+VALUES (3, 201, 'Double', 'WiFi, TV, Mini Bar', 'Sea View', 'Traditional');
+INSERT INTO Room_type (Room_type_ID, room_no, room_size, aminity, room_view, decor) 
+VALUES (4, 301, 'Twin', 'WiFi, TV, Mini Bar', 'Mountain View', 'Contemporary');
+INSERT INTO Room_type (Room_type_ID, room_no, room_size, aminity, room_view, decor) 
+VALUES (5, 401, 'Suite', 'WiFi, TV, Mini Bar, Jacuzzi', 'City View', 'Luxurious');
+
+
+INSERT INTO shift (shift_id, start_time, end_time, s_description) 
+VALUES (1, '2023-05-02 08:00:00', '2023-05-02 16:00:00', 'Morning Shift');
+INSERT INTO shift (shift_id, start_time, end_time, s_description) 
+VALUES (2, '2023-05-02 16:00:00', '2023-05-03 00:00:00', 'Evening Shift');
+INSERT INTO shift (shift_id, start_time, end_time, s_description) 
+VALUES (3, '2023-05-03 00:00:00', '2023-05-03 08:00:00', 'Night Shift');
+INSERT INTO shift (shift_id, start_time, end_time, s_description) 
+VALUES (4, '2023-05-03 08:00:00', '2023-05-03 16:00:00', 'Morning Shift');
+INSERT INTO shift (shift_id, start_time, end_time, s_description) 
+VALUES (5, '2023-05-03 16:00:00', '2023-05-04 00:00:00', 'Evening Shift');
+
+
+INSERT INTO Department (department_id, D_name, d_description) 
+VALUES (1, 'Housekeeping', 'Cleaning and maintaining guest rooms.');
+INSERT INTO Department (department_id, D_name, d_description) 
+VALUES (2, 'Front Desk', 'Welcoming guests, checking in and outs.');
+INSERT INTO Department (department_id, D_name, d_description) 
+VALUES (3, 'Food and Beverage', 'Providing food and beverage services');
+INSERT INTO Department (department_id, D_name, d_description) 
+VALUES (4, 'Maintenance', 'Maintaining and repairing hotel facilities');
+INSERT INTO Department (department_id, D_name, d_description) 
+VALUES (5, 'Security', 'Ensuring the safety and security of guests');
+
+
+INSERT INTO job_title (job_id, salary_rs, job_role, job_requirement, job_description) 
+VALUES (1, 30000, 'Housekeeper', 'Cleaning guest rooms,common areas', 'Experience in housekeeping preferred');
+INSERT INTO job_title (job_id, salary_rs, job_role, job_requirement, job_description) 
+VALUES (2, 35000, 'Front Desk Agent', 'Welcoming guests, checking-in and out', 'Experience in customer service');
+INSERT INTO job_title (job_id, salary_rs, job_role, job_requirement, job_description) 
+VALUES (3, 40000, 'Chef', 'Preparing food for hotel guests', ' food safety regulations');
+INSERT INTO job_title (job_id, salary_rs, job_role, job_requirement, job_description) 
+VALUES (4, 25000, 'Technician', 'Maintaining facilities and equipment', 'Experience in maintenance');
+INSERT INTO job_title (job_id, salary_rs, job_role, job_requirement, job_description) 
+VALUES (5, 35000, 'Security Officer', 'Ensuring safety and security of guests', 'Experience in security or law enforcement');
+
+
+INSERT INTO H_event (event_id, E_name, E_location, E_date_time, event_location, E_attendies) 
+VALUES (1, 'Wedding Reception', 'Grand Ballroom', '2023-06-25 18:00:00', 'Indoor', 150);
+INSERT INTO H_event (event_id, E_name, E_location, E_date_time, event_location, E_attendies) 
+VALUES (2, 'Conference', 'Conference Hall', '2023-07-10 09:00:00', 'Indoor', 50);
+INSERT INTO H_event (event_id, E_name, E_location, E_date_time, event_location, E_attendies) 
+VALUES (3, 'Pool Party', 'Poolside', '2023-08-05 14:00:00', 'Outdoor', 100);
+INSERT INTO H_event (event_id, E_name, E_location, E_date_time, event_location, E_attendies) 
+VALUES (4, 'Birthday Celebration', 'Private Dining Room', '2023-08-10 19:00:00', 'Indoor', 20);
+INSERT INTO H_event (event_id, E_name, E_location, E_date_time, event_location, E_attendies) 
+VALUES (5, 'Charity Event', 'Grand Ballroom', '2023-09-15 17:00:00', 'Indoor', 200);
+
+
+INSERT INTO payment (payment_id, payment_method, amount, payment_date, guest_id)
+VALUES (1, 'Credit Card', 5000, '2023-05-01', 1);
+INSERT INTO payment (payment_id, payment_method, amount, payment_date, guest_id)
+VALUES (2, 'Debit Card', 5000, '2023-04-22', 2);
+INSERT INTO payment (payment_id, payment_method, amount, payment_date, guest_id)
+VALUES (3, 'Cash', 10000, '2023-03-15', 3);
+INSERT INTO payment (payment_id, payment_method, amount, payment_date, guest_id)
+VALUES (4, 'Online Transfer', 12000, '2023-02-05', 4);
+INSERT INTO payment (payment_id, payment_method, amount, payment_date, guest_id)
+VALUES (5, 'Credit Card', 25000, '2023-01-20', 5);
+
+
+INSERT INTO H_Employee (Emp_id, Emp_name, Emp_mail, department_id, shift_id, job_id)
+VALUES (1, 'Amit Patel', 'amit.patel@example.com', 2, 1, 3);
+INSERT INTO H_Employee (Emp_id, Emp_name, Emp_mail, department_id, shift_id, job_id)
+VALUES (2, 'Smita Sharma', 'smita.sharma@example.com', 3, 2, 2);
+INSERT INTO H_Employee (Emp_id, Emp_name, Emp_mail, department_id, shift_id, job_id)
+VALUES (3, 'Rahul Singh', 'rahul.singh@example.com', 1, 1, 1);
+INSERT INTO H_Employee (Emp_id, Emp_name, Emp_mail, department_id, shift_id, job_id)
+VALUES (4, 'Priya Gupta', 'priya.gupta@example.com', 2, 1, 4);
+INSERT INTO H_Employee (Emp_id, Emp_name, Emp_mail, department_id, shift_id, job_id)
+VALUES (5, 'Anjali Mishra', 'anjali.mishra@example.com', 3, 2, 3);
+
+
+INSERT INTO Reservation (Reservation_id, Room_no, check_in_, check_out, reservation_date, guest_id, payment_id)
+VALUES (11, 101, '2023-06-01 14:00:00', '2023-06-05 11:00:00', '2023-05-01', 1, 1);
+INSERT INTO Reservation (Reservation_id, Room_no, check_in_, check_out, reservation_date, guest_id, payment_id)
+VALUES (12, 102, '2023-07-15 15:00:00', '2023-07-20 12:00:00', '2023-06-01', 2, 2);
+INSERT INTO Reservation (Reservation_id, Room_no, check_in_, check_out, reservation_date, guest_id, payment_id)
+VALUES (13, 201, '2023-08-10 12:00:00', '2023-08-13 10:00:00', '2023-07-01', 3, 3);
+INSERT INTO Reservation (Reservation_id, Room_no, check_in_, check_out, reservation_date, guest_id, payment_id)
+VALUES (14, 301, '2023-09-01 16:00:00', '2023-09-04 14:00:00', '2023-08-01', 4, 4);
+INSERT INTO Reservation (Reservation_id, Room_no, check_in_, check_out, reservation_date, guest_id, payment_id)
+VALUES (15, 401, '2023-10-20 10:00:00', '2023-10-24 09:00:00', '2023-09-01', 5, 5);
+
+
+INSERT INTO Address (emp_id, street, city, state, zip_code)
+VALUES (1, '21, Pratiksha Nagar', 'Mumbai', 'Maharashtra', '400022');
+INSERT INTO Address (emp_id, street, city, state, zip_code)
+VALUES (2, '5, Shanti Nagar', 'Jaipur', 'Rajasthan', '302018');
+INSERT INTO Address (emp_id, street, city, state, zip_code)
+VALUES (3, '27, Ashok Vihar', 'Delhi', 'Delhi', '110052');
+INSERT INTO Address (emp_id, street, city, state, zip_code)
+VALUES (4, '9, Nehru Place', 'Ahmedabad', 'Gujarat', '380015');
+INSERT INTO Address (emp_id, street, city, state, zip_code)
+VALUES (5, '17, Kailash Nagar', 'Chennai', 'Tamil Nadu', '600083');
+
+
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (1, '12, Maruti Nagar', 'Pune', 'Maharashtra', '411009');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (2, '7, Malviya Nagar', 'Delhi', 'Delhi', '110017');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (3, '14, Vaishali Nagar', 'Jaipur', 'Rajasthan', '302021');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (4, '5, MG Road', 'Kolkata', 'West Bengal', '700001');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (5, '21, T Nagar', 'Chennai', 'Tamil Nadu', '600017');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (6, '33, Gandhi Nagar', 'Ahmedabad', 'Gujarat', '380009');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (7, '9, Civil Lines', 'Lucknow', 'Uttar Pradesh', '226001');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (8, '11, Indira Nagar', 'Bengaluru', 'Karnataka', '560038');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (9, '8, Sector 45', 'Gurugram', 'Haryana', '122003');
+INSERT INTO Address (guest_id, street, city, state, zip_code)
+VALUES (10, '24, Rani Bagh', 'New Delhi', 'Delhi', '110034');  
+
+
+-- Insert phone numbers for guests
+INSERT INTO Phone_number (guest_id, phone_number, phone_number_2)
+VALUES (1, '9876543210','9838238238');
+INSERT INTO Phone_number (guest_id, phone_number )
+VALUES (2, '8765432109');
+INSERT INTO Phone_number (guest_id, phone_number)
+VALUES (3, '7654321098');
+INSERT INTO Phone_number (guest_id, phone_number)
+VALUES (4, '9543210987');
+INSERT INTO Phone_number (guest_id, phone_number, phone_number_2)
+VALUES (5, '9432109876', '9432109875');
+INSERT INTO Phone_number (guest_id, phone_number)
+VALUES (6, '9321098765');
+INSERT INTO Phone_number (guest_id, phone_number, phone_number_2)
+VALUES (7, '9210987654', '989877778');
+INSERT INTO Phone_number (guest_id, phone_number)
+VALUES (8, '9109876543');
+INSERT INTO Phone_number (guest_id, phone_number)
+VALUES (9, '9098765432');
+INSERT INTO Phone_number (guest_id, phone_number, phone_number_2)
+VALUES (10, '9867654321', '0987654320');
+
+-- Insert phone numbers for employees
+INSERT INTO Phone_number (emp_id, phone_number, phone_number_2)
+VALUES (1, '9876543210', '9876543211');
+INSERT INTO Phone_number (emp_id, phone_number)
+VALUES (2, '8765432109');
+INSERT INTO Phone_number (emp_id, phone_number)
+VALUES (3, '7654321098');
+INSERT INTO Phone_number (emp_id, phone_number, phone_number_2)
+VALUES (4, '6543210987','949349349');
+INSERT INTO Phone_number (emp_id, phone_number, phone_number_2)
+VALUES (5, '5432109876', '5432109875');
+
+
+
