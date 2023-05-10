@@ -5,6 +5,23 @@
 #### INTRODUCTION
 A Hotel Management ER diagram is a visual representation of the data model used to manage hotel operations. It includes entities such as guests, reservations, rooms, employees, payments, and other key aspects of hotel management. The diagram helps hotel managers and developers understand the relationships between different entities in the system and can be used as a blueprint for developing a custom hotel management system. Overall, a Hotel Management ER diagram is a valuable tool for improving the efficiency and organization of hotel operations.
 
+
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0c0b89b-92f0-49c8-991c-42d645b6c0eb)
+
+#### ATTRIBUTES FOR EACH ENTITY
+1. Hotel: hotel_id, hotel name, hotel address(city, zipcode, state), hotel phone no
+2. Guest: guest_id, first_name, last_name, email, phone_number, address, date_of_birth, Age 
+3. Reservation: room_id, reservation_id, check_in_date, check_out_date, reservation_date, payment_structure
+4. Room:  room_number, floor_number, room_type, occupancy_limit, base_price
+5. Payment: payment_id, payment_method, amount, payment_date
+6. Employee: employee_id, first_name, last_name, email, phone_number, department, job_title_id, shift
+7. Job Title: job_title_id,salary, job_title_name, job_description, job requirement
+8. Department: department_id, name, description
+9. Shift: shift_id, start_time, end_time, description
+10. Amenities: amenity_id, name, description
+11. Event: event_id, name, description, date, time, location, organizer, attendees
+
+
 #### DOMINE ENTITY
 1. Hotel
 2. Guest
@@ -20,18 +37,7 @@ A Hotel Management ER diagram is a visual representation of the data model used 
 
 These entities represent key aspects of hotel management and are used to store and manage data related to guests, reservations, rooms, employees, payments, and other important aspects of hotel operations. Together, they provide a comprehensive view of a hotel's operations and help to streamline processes, improve efficiency, and enhance the guest experience.
 
-#### ATTRIBUTES FOR EACH ENTITY
-1. Hotel: hotel_id, hotel name, hotel address(city, zipcode, state), hotel phone no
-2. Guest: guest_id, first_name, last_name, email, phone_number, address, date_of_birth, Age 
-3. Reservation: room_id, reservation_id, check_in_date, check_out_date, reservation_date, payment_structure
-4. Room:  room_number, floor_number, room_type, occupancy_limit, base_price
-5. Payment: payment_id, payment_method, amount, payment_date
-6. Employee: employee_id, first_name, last_name, email, phone_number, department, job_title_id, shift
-7. Job Title: job_title_id,salary, job_title_name, job_description, job requirement
-8. Department: department_id, name, description
-9. Shift: shift_id, start_time, end_time, description
-10. Amenities: amenity_id, name, description
-11. Event: event_id, name, description, date, time, location, organizer, attendees
+
 
 #Hotel
 |H_ID| NAME          | ADDRESS                                          |PHONE_NO               |
@@ -98,25 +104,17 @@ These entities represent key aspects of hotel management and are used to store a
 #Shift
 |S_ID| Start_time        | End_time                               |Description          |
 |---:| ----------------- |:--------------------------------------:| -------------------:|
-|222 | 9am               | 5pm                                    | 19-04-2023                      
-|111 | 6am               | 12am                                   | 21-04-2023                     
-|333 | 9am               | 5pm                                    | 24-04-2023                        
+             
 
 
 #Room type 
 Guest_id                |Room size            | View             | Amenities        | Decor       | 
 |---------------------- |:-------------------:| ----------------:|------------------|------------:|
-|008                 | Available           |  Garden          | Wifi             |Classic      |  
-|111                    | Available           |  Ocean           | Coffee maker     | Modern      | 
-|107                    | Available           |  Mountain        | Minibar          |Contemporary |  
 
 
 #Event
 |e_id| Event_name    |Organizers                              | Location              |Attendees          |Date         | Time   |
 |---:| ------------- |:--------------------------------------:| ---------------------:|------------------:|------------:|--------:|
-|381 | marriage      | xyz                                    | gate 2                |Classic            | 20=03-2023  | 8
-|114 | birthday      | abc                                    | Gate1                 |  Deluxe           | 22-03-2023  | 6
-|411 | birthday      | qwe                                    | Gate1                 |Classic            |  23-03-2023 | 9
 
 
 
