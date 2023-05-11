@@ -23,15 +23,14 @@ we aim to gain insights into the preferences and behaviors of these two distinct
 
 
 
-2) We need to retrieve the names of employees,
+### 2)
+We need to retrieve the names of employees,
 their job roles, and their salaries in the hotel management department. 
 By obtaining this information, we aim to gain insights into the job roles and salary distribution within the hotel management team.
 
-
-
-
-
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/06f2a34e-0c49-4a2e-a67d-555d5fe00807)
+
+
 
 ### CODE:
 SELECT Emp_name, job_role, salary_rs
@@ -40,10 +39,17 @@ INNER JOIN job_title
 ON H_Employee.job_id = job_title.job_id;
 
 
-3) We need to obtain the shift descriptions for every employee in the hotel management department.
+### 3)
+We need to obtain the shift descriptions for every employee in the hotel management department.
 By retrieving this information, we aim to understand the specific shifts worked by each employee and gain insights into the scheduling and staffing patterns within the department.
 
-CODE:
+
+
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/a6376862-25a4-4e34-987d-29c85872e335)
+
+
+ 
+#### CODE:
 SELECT
     COUNT(CASE WHEN sh.s_description = 'Morning shift' THEN 1 END) AS morning_shift_count,
     COUNT(CASE WHEN sh.s_description = 'Evening shift' THEN 1 END) AS evening_shift_count,
@@ -55,7 +61,7 @@ JOIN
 
 
 
-CHART
+
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/a6376862-25a4-4e34-987d-29c85872e335)
 
 
