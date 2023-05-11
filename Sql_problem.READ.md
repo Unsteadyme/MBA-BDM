@@ -6,13 +6,13 @@ PROBLEM STATEMENTS
 By identifying the duration of their stays, 
 we aim to gain insights into the preferences and behaviors of these two distinct age groups and potentially make informed decisions regarding our hospitality services.
 
-CODE
+CHART: ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/5b0be966-4c6b-42c3-b22f-becf7c4efc9e)
 
 
 
 
 
-CHART 
+
 
 
 2) We need to retrieve the names of employees,
@@ -64,7 +64,8 @@ JOIN
 
 
 
-CHART
+CHART: ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/de070a5e-8296-4073-9448-0515583a188b)
+
 
 
 5) We need to determine the count of payment methods used by guests in the hotel managed by the hotel management team. 
@@ -78,7 +79,8 @@ GROUP BY payment_method;
 
 
 
-CHART
+CHART: ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/2a674d0f-8ceb-4c55-bada-6c4571512d41)
+
 
 
 
@@ -90,7 +92,11 @@ By obtaining this information, we aim to analyze the attendance patterns and pop
 CODE:
 SELECT Event_id, E_name, E_attendies
 FROM H_event;
+ 
+ CHART : ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
 
+
+7)
 
 SELECT
   Room.Floor_no,
@@ -105,7 +111,8 @@ GROUP BY
 
 
 
-CHART
+CHART ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/897aa24e-75c1-457d-a3b8-cd8e4a842e01)
+
 
 
 7) We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
@@ -164,7 +171,9 @@ JOIN Phone_number pn ON gd.guest_id = pn.guest_id
 
 
 
-CHART
+CHART ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/a9a62e8f-f41a-4b53-b550-fec35188ebc1)
+
+
 
 
 10)
