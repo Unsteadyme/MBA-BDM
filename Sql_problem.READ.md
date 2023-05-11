@@ -9,7 +9,11 @@ we aim to gain insights into the preferences and behaviors of these two distinct
 
 
 
+
+
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/5b0be966-4c6b-42c3-b22f-becf7c4efc9e)
+
+
 
 
 
