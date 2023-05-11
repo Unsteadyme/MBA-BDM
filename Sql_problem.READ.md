@@ -26,17 +26,17 @@ we aim to gain insights into the preferences and behaviors of these two distinct
 their job roles, and their salaries in the hotel management department. 
 By obtaining this information, we aim to gain insights into the job roles and salary distribution within the hotel management team.
 
-CODE:
-SELECT Emp_name, job_role, salary_rs
-FROM H_Employee
-INNER JOIN job_title
-ON H_Employee.job_id = job_title.job_id;
+
 
 
 
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/06f2a34e-0c49-4a2e-a67d-555d5fe00807)
 
-
+### CODE:
+SELECT Emp_name, job_role, salary_rs
+FROM H_Employee
+INNER JOIN job_title
+ON H_Employee.job_id = job_title.job_id;
 
 
 3) We need to obtain the shift descriptions for every employee in the hotel management department.
