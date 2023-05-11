@@ -54,6 +54,7 @@ JOIN
 
 
 CHART
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/a6376862-25a4-4e34-987d-29c85872e335)
 
 
 4) We need to determine the amount of money paid by each guest to stay in the hotel managed by the hotel management team. 
@@ -73,7 +74,8 @@ JOIN
 
 
 
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/de070a5e-8296-4073-9448-0515583a188b)
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/29d7b1a0-07cb-4812-b7db-b8d268c7161b)
+
 
 
 
@@ -109,7 +111,8 @@ FROM H_event;
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
 
 
-7)
+7)We need to determine the number of guests on each floor in the hotel managed by the hotel management team. 
+By obtaining this information, we aim to analyze the distribution of guests across different floors and understand the occupancy patterns within the hotel.
 
 SELECT
   Room.Floor_no,
