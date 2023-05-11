@@ -180,6 +180,10 @@ JOIN Guest_details ON Address.guest_id = Guest_details.guest_id
 GROUP BY state;
 
 
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/7c529616-05f5-465b-a362-442a18c03471)
+
+
+
 SELECT gd.guest_id, gd.G_name AS guest_name, e.emp_id, e.Emp_name AS employee_name
 FROM Guest_details gd
 JOIN Phone_number pn ON gd.guest_id = pn.guest_id
