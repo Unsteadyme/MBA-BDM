@@ -2,4 +2,110 @@
 PROBLEM STATEMENTS
 
 
-1)Problem Statement: We need to determine the length of stay for guests below the age of 25 and guests above the age of 25 in order to analyze and compare their accommodation patterns. By identifying the duration of their stays, we aim to gain insights into the preferences and behaviors of these two distinct age groups and potentially make informed decisions regarding our hospitality services.
+1)We need to determine the length of stay for guests below the age of 25 and guests above the age of 25 in order to analyze and compare their accommodation patterns.
+By identifying the duration of their stays, 
+we aim to gain insights into the preferences and behaviors of these two distinct age groups and potentially make informed decisions regarding our hospitality services.
+
+code 
+
+
+
+
+
+CHART 
+
+
+2)We need to retrieve the names of employees,
+their job roles, and their salaries in the hotel management department. 
+By obtaining this information, we aim to gain insights into the job roles and salary distribution within the hotel management team.
+
+code
+
+
+
+CHART
+
+
+
+3)We need to obtain the shift descriptions for every employee in the hotel management department.
+By retrieving this information, we aim to understand the specific shifts worked by each employee and gain insights into the scheduling and staffing patterns within the department.
+
+code
+
+
+
+chart
+
+
+4)We need to determine the amount of money paid by each guest to stay in the hotel managed by the hotel management team. 
+By collecting this information, we aim to analyze the revenue generated from guest accommodations, evaluate pricing strategies, 
+and understand the financial impact of guest bookings on the hotel's overall profitability. 
+
+code
+
+
+chart
+
+
+5)We need to determine the count of payment methods used by guests in the hotel managed by the hotel management team. 
+By gathering this information, we aim to analyze the distribution of payment methods utilized by guests during their stays.
+
+
+code
+
+
+
+chart
+
+
+
+6)We need to determine the number of attendees for each event organized by the hotel management team. 
+By obtaining this information, we aim to analyze the attendance patterns and popularity of various events hosted by the hotel. 
+
+
+
+code
+
+
+
+
+chart
+
+
+7) We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
+By collecting this information, we aim to analyze the guest preferences for different room views and understand the demand for specific room types.
+
+
+
+code
+
+
+
+
+chart
+
+
+8)We need to obtain the job descriptions for each employee in the hotel management department. 
+By gathering this information, we aim to understand the roles and responsibilities of each employee within the hotel management team.
+
+
+code
+
+
+
+chart
+
+
+
+9) We need to identify the states from which guests are coming to the hotel managed by the hotel management team. 
+By collecting this information, we aim to analyze the geographic distribution of our guests and understand their origin locations.
+
+
+code
+
+
+
+chart
+
+
+10)
