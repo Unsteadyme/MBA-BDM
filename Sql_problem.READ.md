@@ -183,7 +183,9 @@ GROUP BY state;
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/7c529616-05f5-465b-a362-442a18c03471)
 
 
-11)
+11) We need to determine the number of guests and employees who have provided one or two phone numbers in the hotel management system.
+By analyzing this information, we aim to understand the distribution of communication preferences among guests and employees. 
+CODE:
 SELECT gd.guest_id, gd.G_name AS guest_name, e.emp_id, e.Emp_name AS employee_name
 FROM Guest_details gd
 JOIN Phone_number pn ON gd.guest_id = pn.guest_id
@@ -196,7 +198,7 @@ JOIN Phone_number pn ON gd.guest_id = pn.guest_id
 
 
 
-CHART ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/a9a62e8f-f41a-4b53-b550-fec35188ebc1)
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/bf006353-1972-4bcd-8e54-bb6194567606)
 
 
 
