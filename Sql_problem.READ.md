@@ -58,7 +58,7 @@ CHART
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/a6376862-25a4-4e34-987d-29c85872e335)
 
 
-#4
+# 4
 We need to determine the amount of money paid by each guest to stay in the hotel managed by the hotel management team. 
 By collecting this information, we aim to analyze the revenue generated from guest accommodations, evaluate pricing strategies, 
 and understand the financial impact of guest bookings on the hotel's overall profitability. 
@@ -83,7 +83,7 @@ JOIN
 
 
 
-#5)
+# 5)
  We need to determine the count of payment methods used by guests in the hotel managed by the hotel management team. 
 By gathering this information, we aim to analyze the distribution of payment methods utilized by guests during their stays.
 
@@ -100,14 +100,13 @@ CHART: ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/2a674d0f-
 
 
 
-#6)
+# 6)
 We need to determine the number of attendees for each event organized by the hotel management team. 
 By obtaining this information, we aim to analyze the attendance patterns and popularity of various events hosted by the hotel. 
 
 
 
-##
-CODE:
+## CODE:
 SELECT Event_id, E_name, E_attendies
 FROM H_event;
 
@@ -116,7 +115,7 @@ FROM H_event;
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
 
 
-##7)
+# 7)
 We need to determine the number of guests on each floor in the hotel managed by the hotel management team. 
 By obtaining this information, we aim to analyze the distribution of guests across different floors and understand the occupancy patterns within the hotel.
 
@@ -143,7 +142,7 @@ GROUP BY
 
 
 
-##8)
+# 8)
 We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
 By collecting this information, we aim to analyze the guest preferences for different room views and understand the demand for specific room types.
 
@@ -207,6 +206,18 @@ JOIN Phone_number pn ON gd.guest_id = pn.guest_id
 
 
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/bf006353-1972-4bcd-8e54-bb6194567606)
+
+
+
+# 9 
+ We need to obtain the job descriptions for each employee in the hotel management department. 
+By gathering this information, we aim to understand the roles and responsibilities of each employee within the hotel management team.
+
+
+CODE:
+SELECT Emp_name, job_description
+FROM H_Employee
+JOIN job_title ON H_Employee.job_id = job_title.job_id;
 
 
 
