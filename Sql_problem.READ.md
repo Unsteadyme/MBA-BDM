@@ -201,6 +201,7 @@ GROUP BY room_view;
 By collecting this information, we aim to analyze the geographic distribution of our guests and understand their origin locations.
 
 ## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c665345c-3f34-40df-9f47-6035eff0b078)
 
 
 ## GRAPH 
