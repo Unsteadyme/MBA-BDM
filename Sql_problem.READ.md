@@ -262,8 +262,17 @@ JOIN Phone_number pn ON gd.guest_id = pn.guest_id
  We need to obtain the job descriptions for each employee in the hotel management department. 
 By gathering this information, we aim to understand the roles and responsibilities of each employee within the hotel management team.
 
+## table 
 
-CODE:
+Emp_name	job_description
+Amit Patel	knowledge of food safety regulations
+Smita Sharma	Experience in customer service
+Rahul Singh	Experience in housekeeping preferred
+Priya Gupta	Experience in maintenance
+Anjali Mishra	knowledge of food safety regulations
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/37d3cc60-4818-4401-9fd3-8153c481634c)
+
+## CODE:
 SELECT Emp_name, job_description
 FROM H_Employee
 JOIN job_title ON H_Employee.job_id = job_title.job_id;
