@@ -71,7 +71,11 @@ JOIN
 
 
 
-CHART: ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/de070a5e-8296-4073-9448-0515583a188b)
+
+
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/de070a5e-8296-4073-9448-0515583a188b)
+
+
 
 
 
@@ -99,8 +103,10 @@ By obtaining this information, we aim to analyze the attendance patterns and pop
 CODE:
 SELECT Event_id, E_name, E_attendies
 FROM H_event;
- 
- CHART : ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
+
+
+
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
 
 
 7)
@@ -118,7 +124,12 @@ GROUP BY
 
 
 
-CHART ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/897aa24e-75c1-457d-a3b8-cd8e4a842e01)
+
+
+
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/897aa24e-75c1-457d-a3b8-cd8e4a842e01)
+
+
 
 
 
