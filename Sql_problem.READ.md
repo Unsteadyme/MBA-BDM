@@ -62,15 +62,13 @@ JOIN
 
 
 
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/a6376862-25a4-4e34-987d-29c85872e335)
-
 
 # 4
 We need to determine the amount of money paid by each guest to stay in the hotel managed by the hotel management team. 
 By collecting this information, we aim to analyze the revenue generated from guest accommodations, evaluate pricing strategies, 
 and understand the financial impact of guest bookings on the hotel's overall profitability. 
 
-##CODE:
+## CODE:
 SELECT
     gd.G_name,
     r.Base_price AS money_paid
@@ -95,7 +93,7 @@ JOIN
 By gathering this information, we aim to analyze the distribution of payment methods utilized by guests during their stays.
 
 
-##CODE:
+## CODE:
 SELECT payment_method, COUNT(payment_method) AS count_of_payment_method
 FROM payment
 GROUP BY payment_method;
@@ -126,7 +124,7 @@ FROM H_event;
 We need to determine the number of guests on each floor in the hotel managed by the hotel management team. 
 By obtaining this information, we aim to analyze the distribution of guests across different floors and understand the occupancy patterns within the hotel.
 
-##CODE
+## CODE
 SELECT
   Room.Floor_no,
   COUNT(Room.guest_id) AS guest_count
@@ -155,7 +153,7 @@ By collecting this information, we aim to analyze the guest preferences for diff
 
 
 
-###CODE:
+## CODE:
 SELECT room_view, COUNT(*) AS guest_count
 FROM Guest_details
 JOIN Room ON Guest_details.guest_id = Room.guest_id
@@ -168,22 +166,12 @@ GROUP BY room_view;
 
 
 
-9) We need to obtain the job descriptions for each employee in the hotel management department. 
-By gathering this information, we aim to understand the roles and responsibilities of each employee within the hotel management team.
-
-
-CODE:
-SELECT Emp_name, job_description
-FROM H_Employee
-JOIN job_title ON H_Employee.job_id = job_title.job_id;
 
 
 
-CHART
 
-
-
-10) We need to identify the states from which guests are coming to the hotel managed by the hotel management team. 
+## 9)
+ We need to identify the states from which guests are coming to the hotel managed by the hotel management team. 
 By collecting this information, we aim to analyze the geographic distribution of our guests and understand their origin locations.
 
 
@@ -197,9 +185,14 @@ GROUP BY state;
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/7c529616-05f5-465b-a362-442a18c03471)
 
 
-11) We need to determine the number of guests and employees who have provided one or two phone numbers in the hotel management system.
+# 10) 
+We need to determine the number of guests and employees who have provided one or two phone numbers in the hotel management system.
 By analyzing this information, we aim to understand the distribution of communication preferences among guests and employees. 
-CODE:
+
+
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/bf006353-1972-4bcd-8e54-bb6194567606)
+
+## CODE:
 SELECT gd.guest_id, gd.G_name AS guest_name, e.emp_id, e.Emp_name AS employee_name
 FROM Guest_details gd
 JOIN Phone_number pn ON gd.guest_id = pn.guest_id
@@ -212,11 +205,10 @@ JOIN Phone_number pn ON gd.guest_id = pn.guest_id
 
 
 
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/bf006353-1972-4bcd-8e54-bb6194567606)
 
 
 
-# 9 
+# 11 
  We need to obtain the job descriptions for each employee in the hotel management department. 
 By gathering this information, we aim to understand the roles and responsibilities of each employee within the hotel management team.
 
