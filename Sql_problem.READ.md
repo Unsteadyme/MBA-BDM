@@ -68,6 +68,8 @@ We need to determine the amount of money paid by each guest to stay in the hotel
 By collecting this information, we aim to analyze the revenue generated from guest accommodations, evaluate pricing strategies, 
 and understand the financial impact of guest bookings on the hotel's overall profitability. 
 
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/29d7b1a0-07cb-4812-b7db-b8d268c7161b)
+
 ## CODE:
 SELECT
     gd.G_name,
@@ -77,22 +79,15 @@ FROM
 JOIN
     Room r ON gd.guest_id = r.guest_id;
 
-
-
-
-
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/29d7b1a0-07cb-4812-b7db-b8d268c7161b)
-
-
-
-
-
-
 # 5)
  We need to determine the count of payment methods used by guests in the hotel managed by the hotel management team. 
 By gathering this information, we aim to analyze the distribution of payment methods utilized by guests during their stays.
 
 
+
+ ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/2a674d0f-8ceb-4c55-bada-6c4571512d41)
+ 
+ 
 ## CODE:
 SELECT payment_method, COUNT(payment_method) AS count_of_payment_method
 FROM payment
@@ -100,7 +95,6 @@ GROUP BY payment_method;
 
 
 
-CHART: ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/2a674d0f-8ceb-4c55-bada-6c4571512d41)
 
 
 
@@ -110,6 +104,7 @@ We need to determine the number of attendees for each event organized by the hot
 By obtaining this information, we aim to analyze the attendance patterns and popularity of various events hosted by the hotel. 
 
 
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
 
 ## CODE:
 SELECT Event_id, E_name, E_attendies
@@ -117,12 +112,14 @@ FROM H_event;
 
 
 
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
 
 
 # 7)
 We need to determine the number of guests on each floor in the hotel managed by the hotel management team. 
 By obtaining this information, we aim to analyze the distribution of guests across different floors and understand the occupancy patterns within the hotel.
+
+
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/897aa24e-75c1-457d-a3b8-cd8e4a842e01)
 
 ## CODE
 SELECT
@@ -141,7 +138,6 @@ GROUP BY
 
 
 
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/897aa24e-75c1-457d-a3b8-cd8e4a842e01)
 
 
 
@@ -151,6 +147,7 @@ GROUP BY
 We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
 By collecting this information, we aim to analyze the guest preferences for different room views and understand the demand for specific room types.
 
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/5cccb15c-922b-4aeb-9e69-492b6199e3fa)
 
 
 ## CODE:
@@ -162,18 +159,11 @@ GROUP BY room_view;
 
 
 
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/5cccb15c-922b-4aeb-9e69-492b6199e3fa)
-
-
-
-
-
-
-
 ## 9)
  We need to identify the states from which guests are coming to the hotel managed by the hotel management team. 
 By collecting this information, we aim to analyze the geographic distribution of our guests and understand their origin locations.
 
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/7c529616-05f5-465b-a362-442a18c03471)
 
 CODE:
 SELECT state, COUNT(*) AS count
@@ -182,7 +172,7 @@ JOIN Guest_details ON Address.guest_id = Guest_details.guest_id
 GROUP BY state;
 
 
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/7c529616-05f5-465b-a362-442a18c03471)
+
 
 
 # 10) 
