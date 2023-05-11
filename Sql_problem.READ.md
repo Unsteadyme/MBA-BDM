@@ -7,11 +7,13 @@
 By identifying the duration of their stays, 
 we aim to gain insights into the preferences and behaviors of these two distinct age groups and potentially make informed decisions regarding our hospitality services.
 
+## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/e3a81605-a203-425c-9344-263a43da0109)
 
 
 
 
-
+## GRAPH
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/5b0be966-4c6b-42c3-b22f-becf7c4efc9e)
 
 
@@ -28,6 +30,13 @@ We need to retrieve the names of employees,
 their job roles, and their salaries in the hotel management department. 
 By obtaining this information, we aim to gain insights into the job roles and salary distribution within the hotel management team.
 
+
+## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/479437c2-86b6-4323-99a7-f10bb566f43c)
+
+
+
+## GRAPH
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/06f2a34e-0c49-4a2e-a67d-555d5fe00807)
 
 
@@ -44,7 +53,11 @@ We need to obtain the shift descriptions for every employee in the hotel managem
 By retrieving this information, we aim to understand the specific shifts worked by each employee and gain insights into the scheduling and staffing patterns within the department.
 
 
+## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/1ada7b9e-0f04-4a3a-83af-4eb6bb6ffe77)
 
+
+## GRAPH
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/a6376862-25a4-4e34-987d-29c85872e335)
 
 
@@ -68,6 +81,12 @@ We need to determine the amount of money paid by each guest to stay in the hotel
 By collecting this information, we aim to analyze the revenue generated from guest accommodations, evaluate pricing strategies, 
 and understand the financial impact of guest bookings on the hotel's overall profitability. 
 
+## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/5dd384b6-a7b7-431f-a6b0-274e5aceb997)
+
+
+
+## GRAPH
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/29d7b1a0-07cb-4812-b7db-b8d268c7161b)
 
 ## CODE:
@@ -83,8 +102,12 @@ JOIN
  We need to determine the count of payment methods used by guests in the hotel managed by the hotel management team. 
 By gathering this information, we aim to analyze the distribution of payment methods utilized by guests during their stays.
 
+## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/d2f95d46-f2de-4f43-b410-71ee2d4594db)
 
 
+
+## GRAPH
  ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/2a674d0f-8ceb-4c55-bada-6c4571512d41)
  
  
@@ -103,7 +126,12 @@ GROUP BY payment_method;
 We need to determine the number of attendees for each event organized by the hotel management team. 
 By obtaining this information, we aim to analyze the attendance patterns and popularity of various events hosted by the hotel. 
 
+## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/59eec840-a824-4953-a7d2-b21b97e36869)
 
+
+
+## GRAPH
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
 
 ## CODE:
@@ -118,7 +146,12 @@ FROM H_event;
 We need to determine the number of guests on each floor in the hotel managed by the hotel management team. 
 By obtaining this information, we aim to analyze the distribution of guests across different floors and understand the occupancy patterns within the hotel.
 
+## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/33a8a36b-82f0-4644-b7b5-923869404a7e)
 
+
+
+## GRAPH
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/897aa24e-75c1-457d-a3b8-cd8e4a842e01)
 
 ## CODE
@@ -147,6 +180,10 @@ GROUP BY
 We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
 By collecting this information, we aim to analyze the guest preferences for different room views and understand the demand for specific room types.
 
+## TABLE
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/93112610-8ac7-4780-ad17-96381d049d71)
+
+## GRAPH
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/5cccb15c-922b-4aeb-9e69-492b6199e3fa)
 
 
@@ -163,6 +200,10 @@ GROUP BY room_view;
  We need to identify the states from which guests are coming to the hotel managed by the hotel management team. 
 By collecting this information, we aim to analyze the geographic distribution of our guests and understand their origin locations.
 
+## TABLE
+
+
+## GRAPH 
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/7c529616-05f5-465b-a362-442a18c03471)
 
 CODE:
