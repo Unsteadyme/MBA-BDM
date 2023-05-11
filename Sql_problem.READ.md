@@ -58,11 +58,12 @@ CHART
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/a6376862-25a4-4e34-987d-29c85872e335)
 
 
-4) We need to determine the amount of money paid by each guest to stay in the hotel managed by the hotel management team. 
+#4
+We need to determine the amount of money paid by each guest to stay in the hotel managed by the hotel management team. 
 By collecting this information, we aim to analyze the revenue generated from guest accommodations, evaluate pricing strategies, 
 and understand the financial impact of guest bookings on the hotel's overall profitability. 
 
-CODE:
+##CODE:
 SELECT
     gd.G_name,
     r.Base_price AS money_paid
@@ -82,11 +83,12 @@ JOIN
 
 
 
-5) We need to determine the count of payment methods used by guests in the hotel managed by the hotel management team. 
+#5)
+ We need to determine the count of payment methods used by guests in the hotel managed by the hotel management team. 
 By gathering this information, we aim to analyze the distribution of payment methods utilized by guests during their stays.
 
 
-CODE:
+##CODE:
 SELECT payment_method, COUNT(payment_method) AS count_of_payment_method
 FROM payment
 GROUP BY payment_method;
@@ -98,11 +100,13 @@ CHART: ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/2a674d0f-
 
 
 
-6) We need to determine the number of attendees for each event organized by the hotel management team. 
+#6)
+We need to determine the number of attendees for each event organized by the hotel management team. 
 By obtaining this information, we aim to analyze the attendance patterns and popularity of various events hosted by the hotel. 
 
 
 
+##
 CODE:
 SELECT Event_id, E_name, E_attendies
 FROM H_event;
@@ -112,9 +116,11 @@ FROM H_event;
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/c0ec2f5a-258e-4a72-9da2-3d31587e3bd2)
 
 
-7)We need to determine the number of guests on each floor in the hotel managed by the hotel management team. 
+##7)
+We need to determine the number of guests on each floor in the hotel managed by the hotel management team. 
 By obtaining this information, we aim to analyze the distribution of guests across different floors and understand the occupancy patterns within the hotel.
 
+##CODE
 SELECT
   Room.Floor_no,
   COUNT(Room.guest_id) AS guest_count
@@ -137,12 +143,13 @@ GROUP BY
 
 
 
-8) We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
+##8)
+We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
 By collecting this information, we aim to analyze the guest preferences for different room views and understand the demand for specific room types.
 
 
 
-CODE:
+###CODE:
 SELECT room_view, COUNT(*) AS guest_count
 FROM Guest_details
 JOIN Room ON Guest_details.guest_id = Room.guest_id
@@ -151,8 +158,8 @@ GROUP BY room_view;
 
 
 
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/5cccb15c-922b-4aeb-9e69-492b6199e3fa)
 
-CHART
 
 
 9) We need to obtain the job descriptions for each employee in the hotel management department. 
