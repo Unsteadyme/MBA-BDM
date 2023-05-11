@@ -14,12 +14,26 @@ we aim to gain insights into the preferences and behaviors of these two distinct
 
 
 ## GRAPH
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/5b0be966-4c6b-42c3-b22f-becf7c4efc9e)
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/e7a7af90-0b8c-4de2-a124-f79d50200479)
 
 
 
 
 
+### CODE
+SELECT
+    AVG(DATEDIFF(check_out, check_in_)) AS average_length_of_stay,
+    CASE
+        WHEN gd.G_age < 25 THEN 'Below 25'
+        WHEN gd.G_age >= 25 THEN 'Above 25'
+    END AS age_group
+FROM
+    Reservation res
+    INNER JOIN Guest_details gd ON res.guest_id = gd.guest_id
+WHERE
+    gd.G_age < 25 OR gd.G_age >= 25
+GROUP BY
+    age_group;
 
 
 
