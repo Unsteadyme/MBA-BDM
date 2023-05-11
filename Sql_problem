@@ -19,7 +19,11 @@ CHART
 their job roles, and their salaries in the hotel management department. 
 By obtaining this information, we aim to gain insights into the job roles and salary distribution within the hotel management team.
 
-CODE
+CODE:
+SELECT Emp_name, job_role, salary_rs
+FROM H_Employee
+INNER JOIN job_title
+ON H_Employee.job_id = job_title.job_id;
 
 
 
@@ -30,7 +34,15 @@ CHART
 3) We need to obtain the shift descriptions for every employee in the hotel management department.
 By retrieving this information, we aim to understand the specific shifts worked by each employee and gain insights into the scheduling and staffing patterns within the department.
 
-CODE
+CODE:
+SELECT
+    COUNT(CASE WHEN sh.s_description = 'Morning shift' THEN 1 END) AS morning_shift_count,
+    COUNT(CASE WHEN sh.s_description = 'Evening shift' THEN 1 END) AS evening_shift_count,
+    COUNT(CASE WHEN sh.s_description = 'Night Shift' THEN 1 END) AS Night_shift_count
+FROM
+    H_Employee emp
+JOIN
+    shift sh ON emp.shift_id = sh.shift_id;
 
 
 
@@ -41,7 +53,15 @@ CHART
 By collecting this information, we aim to analyze the revenue generated from guest accommodations, evaluate pricing strategies, 
 and understand the financial impact of guest bookings on the hotel's overall profitability. 
 
-CODE
+CODE:
+SELECT
+    gd.G_name,
+    r.Base_price AS money_paid
+FROM
+    Guest_details gd
+JOIN
+    Room r ON gd.guest_id = r.guest_id;
+
 
 
 CHART
@@ -51,7 +71,10 @@ CHART
 By gathering this information, we aim to analyze the distribution of payment methods utilized by guests during their stays.
 
 
-CODE
+CODE:
+SELECT payment_method, COUNT(payment_method) AS count_of_payment_method
+FROM payment
+GROUP BY payment_method;
 
 
 
@@ -64,7 +87,20 @@ By obtaining this information, we aim to analyze the attendance patterns and pop
 
 
 
-CODE
+CODE:
+SELECT Event_id, E_name, E_attendies
+FROM H_event;
+
+
+SELECT
+  Room.Floor_no,
+  COUNT(Room.guest_id) AS guest_count
+FROM
+  Room
+JOIN
+  Guest_details ON Room.guest_id = Guest_details.guest_id
+GROUP BY
+  Room.Floor_no;
 
 
 
@@ -77,7 +113,12 @@ By collecting this information, we aim to analyze the guest preferences for diff
 
 
 
-CODE
+CODE:
+SELECT room_view, COUNT(*) AS guest_count
+FROM Guest_details
+JOIN Room ON Guest_details.guest_id = Room.guest_id
+JOIN Room_type ON Room.room_no= Room_type.Room_no
+GROUP BY room_view;
 
 
 
@@ -89,7 +130,10 @@ CHART
 By gathering this information, we aim to understand the roles and responsibilities of each employee within the hotel management team.
 
 
-CODE
+CODE:
+SELECT Emp_name, job_description
+FROM H_Employee
+JOIN job_title ON H_Employee.job_id = job_title.job_id;
 
 
 
@@ -101,7 +145,22 @@ CHART
 By collecting this information, we aim to analyze the geographic distribution of our guests and understand their origin locations.
 
 
-CODE
+CODE:
+SELECT state, COUNT(*) AS count
+FROM Address
+JOIN Guest_details ON Address.guest_id = Guest_details.guest_id
+GROUP BY state;
+
+
+SELECT gd.guest_id, gd.G_name AS guest_name, e.emp_id, e.Emp_name AS employee_name
+FROM Guest_details gd
+JOIN Phone_number pn ON gd.guest_id = pn.guest_id
+JOIN H_Employee e ON pn.emp_id = e.emp_id
+WHERE (pn.phone_number IS NOT NULL AND pn.phone_number_2 IS NULL)
+   OR (pn.phone_number  IS NOT NULL AND pn.phone_number_2 IS NOT NULL);
+SELECT gd.guest_id, gd.G_name AS guest_name, e.emp_id, e.Emp_name AS employee_name
+FROM Guest_details gd
+JOIN Phone_number pn ON gd.guest_id = pn.guest_id
 
 
 
