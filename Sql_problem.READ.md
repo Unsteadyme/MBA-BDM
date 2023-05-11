@@ -1,8 +1,9 @@
 
-PROBLEM STATEMENTS
+# PROBLEM STATEMENTS
 
 
-1) We need to determine the length of stay for guests below the age of 25 and guests above the age of 25 in order to analyze and compare their accommodation patterns.
+# 1)
+ We need to determine the length of stay for guests below the age of 25 and guests above the age of 25 in order to analyze and compare their accommodation patterns.
 By identifying the duration of their stays, 
 we aim to gain insights into the preferences and behaviors of these two distinct age groups and potentially make informed decisions regarding our hospitality services.
 
