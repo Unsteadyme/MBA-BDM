@@ -136,7 +136,7 @@ GROUP BY
 
 
 
-7) We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
+8) We need to determine the guest count based on the view of the room in the hotel managed by the hotel management team.
 By collecting this information, we aim to analyze the guest preferences for different room views and understand the demand for specific room types.
 
 
@@ -154,7 +154,7 @@ GROUP BY room_view;
 CHART
 
 
-8) We need to obtain the job descriptions for each employee in the hotel management department. 
+9) We need to obtain the job descriptions for each employee in the hotel management department. 
 By gathering this information, we aim to understand the roles and responsibilities of each employee within the hotel management team.
 
 
@@ -169,7 +169,7 @@ CHART
 
 
 
-9) We need to identify the states from which guests are coming to the hotel managed by the hotel management team. 
+10) We need to identify the states from which guests are coming to the hotel managed by the hotel management team. 
 By collecting this information, we aim to analyze the geographic distribution of our guests and understand their origin locations.
 
 
@@ -183,7 +183,7 @@ GROUP BY state;
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/7c529616-05f5-465b-a362-442a18c03471)
 
 
-
+11)
 SELECT gd.guest_id, gd.G_name AS guest_name, e.emp_id, e.Emp_name AS employee_name
 FROM Guest_details gd
 JOIN Phone_number pn ON gd.guest_id = pn.guest_id
@@ -201,10 +201,4 @@ CHART ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/a9a62e8f-f
 
 
 
-10)
 
-
-CODE
-
-
-CHART
