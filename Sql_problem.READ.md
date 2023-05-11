@@ -235,7 +235,11 @@ GROUP BY state;
 We need to determine the number of guests and employees who have provided one or two phone numbers in the hotel management system.
 By analyzing this information, we aim to understand the distribution of communication preferences among guests and employees. 
 
+## Table
 
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/738dd481-692f-4706-9e8f-9178fb3819b7)
+
+## graph
 ![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/bf006353-1972-4bcd-8e54-bb6194567606)
 
 ## CODE:
