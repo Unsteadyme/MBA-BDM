@@ -8,7 +8,7 @@ By identifying the duration of their stays,
 we aim to gain insights into the preferences and behaviors of these two distinct age groups and potentially make informed decisions regarding our hospitality services.
 
 ## TABLE
-![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/e3a81605-a203-425c-9344-263a43da0109)
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125996860/5b0cdc7b-abaf-4c8d-b055-de2c956ad3c5)
 
 
 
