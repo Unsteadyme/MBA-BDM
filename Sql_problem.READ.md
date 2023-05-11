@@ -34,7 +34,8 @@ ON H_Employee.job_id = job_title.job_id;
 
 
 
-CHART
+![image](https://github.com/Unsteadyme/MBA-BDM/assets/125997577/06f2a34e-0c49-4a2e-a67d-555d5fe00807)
+
 
 
 
